@@ -1,0 +1,42 @@
+body{
+   background-color: darkcyan;
+}
+.wrapper{
+   max-width: 1310px;
+   /* ширина контента */
+   padding: 0 15px;
+   /* делаем отступ 15 пикселей обязательно */
+   margin: 0 auto;
+   /* выравниваем по середине */
+   height: 100%;
+}
+
+.Text_name{
+   font-family: var(--font-family);
+font-weight: 800;
+font-size: 58px;
+line-height: 131%;
+letter-spacing: -0.03em;
+text-align: center;
+color: var(--black);
+}
+.Text_Description{
+   font-family: var(--font-family);
+font-weight: 600;
+font-size: 24px;
+line-height: 150%;
+letter-spacing: -0.03em;
+color: var(--black);
+}
+.Calculator-slider_2X2--grid{
+   max-width: 300px;
+   display: grid;
+   grid: 21px 21px / 21px 21px;
+}
+.grid-item{
+   padding-top: 1px;
+}
+.myinpute{
+   width: 20px;
+   height: 20px;
+}

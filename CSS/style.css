@@ -1,7 +1,8 @@
-body{
+body {
    background-color: darkcyan;
 }
-.wrapper{
+
+.wrapper {
    max-width: 1310px;
    /* ширина контента */
    padding: 0 15px;
@@ -11,32 +12,137 @@ body{
    height: 100%;
 }
 
-.Text_name{
+.Text_name {
    font-family: var(--font-family);
-font-weight: 800;
-font-size: 58px;
-line-height: 131%;
-letter-spacing: -0.03em;
-text-align: center;
-color: var(--black);
+   font-weight: 800;
+   font-size: 58px;
+   line-height: 131%;
+   letter-spacing: -0.03em;
+   text-align: center;
+   color: var(--black);
 }
-.Text_Description{
+
+.Calculator-slider {
+   margin-top: 20px;
+   width: 1100px;
+   margin-left: 50px;
+}
+
+.Text_Description {
    font-family: var(--font-family);
-font-weight: 600;
-font-size: 24px;
-line-height: 150%;
-letter-spacing: -0.03em;
-color: var(--black);
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 150%;
+   letter-spacing: -0.03em;
+   color: var(--black);
 }
-.Calculator-slider_2X2--grid{
+
+.slick-initialized .slick-slide {
+   display: flex;
+}
+
+.Calculator-slider_2X2--grid {
    max-width: 300px;
    display: grid;
-   grid: 21px 21px / 21px 21px;
+   grid: 31px 31px / 31px 31px;
 }
-.grid-item{
+
+.Calculator-slider_2X2--equals {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 150%;
+   letter-spacing: -0.03em;
+   color: black;
+   margin-top: 17px;
+   margin-left: 10px;
+}
+
+.grid-item {
    padding-top: 1px;
 }
-.myinpute{
-   width: 20px;
-   height: 20px;
+
+.myinpute {
+   width: 30px;
+   height: 30px;
+   text-align: center;
+}
+.wrapper-slider{
+   display: flex;
+}
+.Calculator-slider_3X3--grid {
+   max-width: 300px;
+   display: grid;
+   grid: 31px 31px 31px / 31px 31px 31px;
+}
+
+.Calculator-slider_3X3--equals {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 150%;
+   letter-spacing: -0.03em;
+   color: black;
+   margin-top: 30px;
+   margin-left: 10px;
+}
+
+.slider-button-previous {}
+
+.slider-button-next {
+   cursor: pointer;
+   height: 120px;
+   width: 80px;
+   position: relative;
+   margin: 20px;
+}
+
+.arrow-2-top, .arrow-2-bottom {
+   background: #b733b3;
+   height: 10px;
+   left: -30px;
+   position: absolute;
+   top: 60px;
+   width: 100px;
+}
+
+.arrow-2-top {
+   top: 64px;
+   transform: rotate(45deg);
+   transform-origin: bottom right;
+}
+
+.arrow-2-bottom {
+   transform: rotate(-45deg);
+   transform-origin: top right;
+}
+
+.arrow-2-top::after,
+.arrow-2-bottom::after {
+   background: #000;
+   content: '';
+   height: 100%;
+   position: absolute;
+   top: 0;
+   transition: all 0.15s;
+}
+
+.arrow-2-top::after {
+   left: 100%;
+   right: 0;
+   transition-delay: 0s;
+}
+
+.arrow-2-bottom::after {
+   left: 0;
+   right: 100%;
+   transition-delay: 0.15s;
+}
+
+.slider-button-next:hover .arrow-2-top::after {
+   left: 0;
+   transition-delay: 0.15s;
+}
+
+.slider-button-next:hover .arrow-2-bottom::after {
+   right: 0;
+   transition-delay: 0s;
 }

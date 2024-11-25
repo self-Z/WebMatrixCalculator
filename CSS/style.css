@@ -146,3 +146,22 @@ body {
    right: 0;
    transition-delay: 0s;
 }
+
+.button {
+   width: 610px;
+   height: 40px;
+   border-radius: 4px;
+   margin-top: 3px;
+   background-color: rgb(55, 57, 57);
+   border: 1px solid aqua;
+   color: aqua;
+   transition: 0.3s;
+}
+.button:hover{
+   background-color:  rgb(16, 97, 97);
+}
+.button:active{
+   width: 580px;
+   height: 35px;
+}
+

@@ -25,7 +25,7 @@ body {
 .Calculator-slider {
    margin-top: 20px;
    width: 1100px;
-   margin-left: 50px;
+
 }
 
 .Text_Description {
@@ -55,6 +55,7 @@ body {
    color: black;
    margin-top: 17px;
    margin-left: 10px;
+
 }
 
 .grid-item {
@@ -81,7 +82,7 @@ body {
    line-height: 150%;
    letter-spacing: -0.03em;
    color: black;
-   margin-top: 30px;
+   margin-top: 20px;
    margin-left: 10px;
 }
 
@@ -165,3 +166,41 @@ body {
    height: 35px;
 }
 
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 500px){
+   .button {
+      width: 350px;
+      height: 40px;
+      border-radius: 4px;
+      margin-top: 3px;
+      background-color: rgb(55, 57, 57);
+      border: 1px solid aqua;
+      color: aqua;
+      transition: 0.3s;
+   }
+   
+   .Calculator-slider_3X3--equals {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 150%;
+      letter-spacing: -0.03em;
+      color: black;
+      margin-top: 20px;
+      margin-left: 1px;
+   }
+   .arrow-2-top, .arrow-2-bottom {
+      display: flex;
+      background: #b733b3;
+      height: 10px;
+      left: -30px;
+      position: absolute;
+      top: 60px;
+      width: 100px;
+   }
+      .Calculator-slider {
+         margin-top: 20px;
+         width: 300px;
+      
+      
+   }
+}
